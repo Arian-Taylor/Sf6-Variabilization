@@ -1,0 +1,13 @@
+{% extends 'tests/layout.html.twig' %}
+{% block title %}Hello TestsController!{% endblock %}
+{% block body %}
+<div id="app_body_wrapper">
+    {# JSX content #}
+</div>
+{% endblock %}
+{% block stylesheets %}
+{{ encore_entry_link_tags('jsx', null, 'tests_config') }}
+{% endblock %}
+{% block javascripts %}
+{{ encore_entry_script_tags('jsx', null, 'tests_config') }}
+{% endblock %}

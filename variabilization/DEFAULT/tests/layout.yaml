@@ -1,0 +1,17 @@
+favicon:
+  href: "/sites/DEFAULT/icons/favicon_32.png"
+
+navbar:
+  navbrand_img:
+    src: "/sites/DEFAULT/icons/logo_128.png"
+    alt: "Logo"
+  navbar_menu:
+    menu1:
+      text: "Test avec TWIG"
+    menu2:
+      text: "Test avec JS/JSX"
+
+footer:
+  copyright:
+    text1: "Default Site"
+    text2: "Tous droits réservés."

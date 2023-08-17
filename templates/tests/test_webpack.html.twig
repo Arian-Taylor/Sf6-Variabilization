@@ -1,0 +1,38 @@
+{% extends 'tests/layout.html.twig' %}
+{% block title %}Hello TestsController!{% endblock %}
+{% block body %}
+<div class="example-wrapper text-center">
+    <h1 class="titre">
+        Bootstrap & Jquery & SCSS
+    </h1>
+    <div class="bg_img"></div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Test modal ok
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block stylesheets %}
+{{ encore_entry_link_tags('webpack', null, 'tests_config') }}
+{% endblock %}
+{% block javascripts %}
+{{ encore_entry_script_tags('webpack', null, 'tests_config') }}
+{% endblock %}

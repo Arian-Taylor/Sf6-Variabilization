@@ -1,0 +1,17 @@
+favicon:
+  href: "/sites/GREEN_SITE/icons/favicon_32.png"
+
+navbar:
+  navbrand_img:
+    src: "/sites/GREEN_SITE/icons/logo_128.png"
+    alt: "Logo"
+  navbar_menu:
+    menu1:
+      text: "Variabilisation avec TWIG"
+    menu2:
+      text: "Variabilisation avec JS/JSX"
+
+footer:
+  copyright:
+    text1: "Green Site"
+    text2: "Tous droits réservés."

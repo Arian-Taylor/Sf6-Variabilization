@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{{ customTranslate("tests.layout.navbar.navbrand_img.src") }}" alt="{{ customTranslate("tests.layout.navbar.navbrand_img.alt") }}" width="30" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_test_varibilization_html_twig') }}">
+                        {{ customTranslate("tests.layout.navbar.navbar_menu.menu1.text") }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_test_varibilization_js_jsx') }}">
+                        {{ customTranslate("tests.layout.navbar.navbar_menu.menu2.text") }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,36 @@
+@mixin propriete_x($propriete, $first_value, $max_widths_values) {
+    @if $first_value {
+        #{$propriete}: $first_value;
+    }
+
+    @each $max_width, $value in $max_widths_values {
+        @if $value {
+            @media (max-width: $max_width) {
+                #{$propriete}: $value;
+            }
+        }
+    }
+}
+
+body {
+    color: var(--primary-color);
+    background-color: var(--body-bg-color);
+}
+
+nav.navbar {
+    background-color: var(--navbar-bg-color) !important;
+
+    .nav-link {
+        color: var(--primary-color);
+        font-weight: 900;
+        text-decoration: underline;
+    }
+}
+
+footer.footer {
+    background-color: var(--footer-bg-color);
+}
+
+.max_w_128 {
+    max-width: 128px;
+}

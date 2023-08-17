@@ -1,0 +1,7 @@
+framework:
+    rate_limiter:
+        anonymous_api:
+            # use 'fixed_window' or 'token_bucket' if you prefer that policy
+            policy: 'sliding_window'
+            limit: '%env(int:SYS_SECURE_RATE_LIMTER_LIMIT)%'
+            interval: '%env(SYS_SECURE_RATE_LIMITER_INTERVAL)%'

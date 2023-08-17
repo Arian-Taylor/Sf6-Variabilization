@@ -1,0 +1,11 @@
+pageTitle: "Test | JS-JSX"
+content:
+  title:
+    text: "Variabilisation avec JS-JSX"
+  subtitle:
+    text1: "Good morning {{firstname}} {{lastname}}"
+  description:
+    text: "<strong>{{firstname}}</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <strong>incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  img:
+    src: "/sites/RED_SITE/images/red_site_img_2.png"
+    alt: "red_site_img_2"

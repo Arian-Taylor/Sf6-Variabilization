@@ -1,0 +1,27 @@
+{% extends 'tests/layout.html.twig' %}
+
+{% block title %}
+	{{ customTranslate("tests.pages.page1.pageTitle") }}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	<h1>{{ customTranslate("tests.pages.page1.content.title.text") }}</h1>
+
+	<h2>{{ customTranslate("tests.pages.page1.content.subtitle.text1", {"firstname": "John", "lastname": "Doe"}) }}</h2>
+
+	<p>{{ customTranslate("tests.pages.page1.content.description.text", {"firstname": "John"})|raw }}</p>
+
+	<img src="{{ customTranslate("tests.pages.page1.content.img.src") }}" class="rounded mx-auto d-block max_w_128 mb-3" alt="{{ customTranslate("tests.pages.page1.content.img.alt") }}" />
+
+	<span class="background_img max_w_128 mb-3"></span>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('varibilization_twig', null, 'tests_config') }}
+{% endblock %}
+
+{% block javascripts %}
+{{ encore_entry_script_tags('varibilization_twig', null, 'tests_config') }}
+{% endblock %}

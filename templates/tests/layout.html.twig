@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/sites/DEFAULT/icons/favicon_32.png"/>
+
+    {# importation of theme variabilization #}
+    {{ encore_entry_link_tags(getEntryPointThemeOfSite(), null, 'variabilization_config') }}
+
+    {{ encore_entry_link_tags('layout', null, 'tests_config') }}
+
+    {% block stylesheets %}
+    {% endblock %}
+</head>
+
+<body>
+
+    {% include "tests/layout_navbar.html.twig" %}
+    {% block body %}{% endblock %}
+    {% include "tests/layout_footer.html.twig" %}
+    
+    {{ encore_entry_script_tags('layout', null, 'tests_config') }}
+    {% block javascripts %}
+    {% endblock %}
+</body>
+
+</html>

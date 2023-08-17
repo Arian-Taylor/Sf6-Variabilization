@@ -1,0 +1,27 @@
+{% extends 'tests/layout.html.twig' %}
+
+{% block title %}
+    {{ customTranslate("tests.pages.page2.pageTitle") }}
+{% endblock %}
+
+{% block body %}
+<div id="app_body_wrapper">
+    {# JSX content #}
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('varibilization_jsx', null, 'tests_config') }}
+{% endblock %}
+
+{% block javascripts %}
+{# translation to global js variable #}
+<script type="text/javascript">
+    {% if siteTranslation is defined %}
+        window.siteTranslation = {{siteTranslation|json_encode|raw}};
+    {% else %}
+        window.siteTranslation = {};
+    {% endif %}
+</script>
+{{ encore_entry_script_tags('varibilization_jsx', null, 'tests_config') }}
+{% endblock %}

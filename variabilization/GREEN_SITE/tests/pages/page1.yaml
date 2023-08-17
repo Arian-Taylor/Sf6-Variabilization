@@ -1,0 +1,11 @@
+pageTitle: "Test | HTML-Twig"
+content:
+  title:
+    text: "Variabilisation avec HTML-TWIG"
+  subtitle:
+    text1: "Bonjour {{firstname}} {{lastname}}"
+  description:
+    text: "<strong>{{firstname}}</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <strong>incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  img:
+    src: "/sites/GREEN_SITE/images/green_site_img_1.png"
+    alt: "green_site_img_1"

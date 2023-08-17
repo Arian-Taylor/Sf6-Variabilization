@@ -1,0 +1,11 @@
+pageTitle: "Test | HTML-Twig"
+content:
+  title:
+    text: "Test variabilisation avec HTML-TWIG"
+  subtitle:
+    text1: "Bonjour {{firstname}} {{lastname}}"
+  description:
+    text: "<strong>{{firstname}}</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <strong>incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  img:
+    src: "/sites/DEFAULT/images/example_img_1.png"
+    alt: "example_img_1"
